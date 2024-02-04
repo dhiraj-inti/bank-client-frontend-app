@@ -5,7 +5,7 @@ const LoginState = (props)=>{
     // Initialize show state from local storage or default to true
     const [show, setShow] = useState(() => {
       const storedShow = localStorage.getItem('show');
-      return storedShow !== null ? JSON.parse(storedShow) : true;
+      return storedShow !== null ? JSON.parse(storedShow) : false;
     });
 
     // Update local storage when show state changes
